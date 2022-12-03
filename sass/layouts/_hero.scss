@@ -1,0 +1,78 @@
+.hero {
+    background: var(--background-gray);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero--container {
+    text-align: center;
+}
+
+.hero__titel {
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--titel-white);
+}
+
+.hero__btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    min-width: 216px;
+    transition: background-color var(--timing);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background-color: #188ce8;
+}
+
+.hero__btn::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url(../images/envelope_bnt.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform var(--timing);
+}
+
+.hero__btn:hover::before,
+.hero__btn:focus::before {
+    transform: translateY(-40px);
+}
+
+.hero__btn::after {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/phone_btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(calc(-50% + 40px));
+    transition: transform var(--timing);
+}
+
+.hero__btn:hover::after,
+.hero__btn:focus::after {
+    transform: translateY(-50%);
+}
