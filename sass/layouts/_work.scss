@@ -1,38 +1,36 @@
 .work {
-    padding-top: 0px;
+  padding-top: 0px;
+
+  &__list {
+  @extend %list
+    }
+  
+ &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  
+  &__titel {
+      margin-bottom: 50px;
+    }
 }
 
-.work-list {
-    display: flex;
-    gap: 30px;
-}
+.work__card {
+  position: relative;
 
-.work-item {
-    flex-basis: calc((100% - 60px) / 3);
-}
-
-
-.work-titel {
-    margin-bottom: 50px;
-}
-
-.work-thumb {
-    position: relative;
-}
-
-.work-describe {
+  &-description {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 27px 0;
     background: rgba(47, 48, 58, 0.8);
-}
+  }
 
-.work-uptitel {
+  &-titel {
     font-size: 14px;
     line-height: 1.1429;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--titel-white);
+  }
 }

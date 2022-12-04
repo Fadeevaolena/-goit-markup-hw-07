@@ -1,21 +1,20 @@
 .hero {
-    background: var(--background-gray);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero_img.jpg);
-    background-position: center;
-    background-size: cover;
-}
+  background: var(--background-gray);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_img.jpg);
+  background-position: center;
+  background-size: cover;
 
-.hero--container {
+  &--container {
     text-align: center;
-}
+  }
 
-.hero__titel {
+  &__titel {
     width: 696px;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -25,22 +24,21 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--titel-white);
+  }
 }
 
 .hero__btn {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    min-width: 216px;
-    transition: background-color var(--timing);
-}
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  min-width: 216px;
+  transition: background-color var(--timing);
 
-.hero__btn:hover,
-.hero__btn:focus {
+  &:hover,
+  &:focus {
     background-color: #188ce8;
-}
-
-.hero__btn::before {
+  }
+  &:before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -50,14 +48,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform var(--timing);
-}
-
-.hero__btn:hover::before,
-.hero__btn:focus::before {
+  }
+  &:hover:before {
     transform: translateY(-40px);
-}
-
-.hero__btn::after {
+  }
+  &:after {
     position: absolute;
     top: 50%;
     left: 25px;
@@ -70,9 +65,9 @@
     background-repeat: no-repeat;
     transform: translateY(calc(-50% + 40px));
     transition: transform var(--timing);
+  }
+  &:hover:after {
+    transform: translateY(-50%);
+  }
 }
 
-.hero__btn:hover::after,
-.hero__btn:focus::after {
-    transform: translateY(-50%);
-}

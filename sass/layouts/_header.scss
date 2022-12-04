@@ -1,41 +1,28 @@
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
-}
+  &--container {
+    display: flex;
+    align-items: center;
+  }
 
-.header--container {
-  display: flex;
-  align-items: center;
-}
+  &__nav-list {
+    display: flex;
+    margin-right: auto;
+    gap: 50px;
+  }
 
-.logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  font-family: var(--font-Ral);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
-}
-
-.header__logo {
-  color: #000000;
+  &__contact-list {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
+  &__logo {
+    color: #000000;
+  }
 }
 
 .logo-text {
   color: var(--effect-color);
-}
-
-.header__nav-list {
-  display: flex;
-  margin-right: auto;
-  gap: 50px;
-}
-
-.header__contact-list {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
 }
 
 .nav__link {
@@ -53,42 +40,38 @@
   color: var(--effect-color);
 
   &::after {
+    content: '';
     position: absolute;
     bottom: 1px;
     left: 0;
-    content: '';
     width: 100%;
     height: 4px;
     background: var(--effect-color);
     border-radius: 2px;
   }
 }
+.nav__link {
+  &:not(.nav__link--current)::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform var(--timing);
+    transform-origin: left;
+  }
 
-.nav__link:not(.nav__link--current)::after {
-  content: '';
-  position: absolute;
-  bottom: 1px;
-  left: 0;
-  display: inline-block;
-  width: 100%;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
-  transform: scaleX(0);
-  transition: transform var(--timing);
-  transform-origin: left;
-
-&:hover,
-    &:focus {
-        &:after {
-            transform: scaleX(1);
-        }
+  &:hover,
+  &:focus {
+    &:after {
+      transform: scaleX(1);
     }
-}
-
-.nav__link:hover:after,
-.nav__link:focus:after {
-  transform: scaleX(1);
+  }
 }
 
 .contact__link {

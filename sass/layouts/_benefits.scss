@@ -1,20 +1,20 @@
 .benefits__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .benefits__item {
-    max-width: 270px;
+  max-width: 270px;
 }
 
-.benifits-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
+.benefits__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 /* .benifits-card__icon {
@@ -23,17 +23,17 @@
 } */
 
 .benefits__titel {
-    font-size: 14px;
-    line-height: 1.1429;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--first-gray);
-    margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--first-gray);
+  margin-bottom: 10px;
 }
 
 .benefits__text {
-    font-size: 14px;
-    line-height: 1.7143;
-    letter-spacing: 0.03em;
-    color: var(--gray-light);
+  font-size: 14px;
+  line-height: 1.7143;
+  letter-spacing: 0.03em;
+  color: var(--gray-light);
 }
