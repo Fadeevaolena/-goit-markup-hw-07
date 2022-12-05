@@ -3,6 +3,7 @@
 }
 
 .team__titel {
+  @extend %titel;
   margin-bottom: 50px;
 }
 
@@ -22,20 +23,15 @@
 }
 
 .team__uptitel {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
+  @include font(500, 16, 1.1875);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--first-gray);
   margin-bottom: 10px;
 }
 
 .team__text {
-  font-size: 16px;
-  line-height: 1.1875;
+  @include font(null, 16, 1.1875);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--gray-light);
   margin-bottom: 16px;
 }

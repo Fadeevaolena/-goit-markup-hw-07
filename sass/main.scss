@@ -1,15 +1,13 @@
 @import './utils/vars';
+@import './utils/mixins';
 @import './utils/placeholders';
-@import './utils/hidden.scss';
+@import './utils/hidden-titel';
 @import './base/reset';
 @import './base/common';
 
 @import './components/section';
 @import './components/container';
 @import './components/logo';
-@import './components/btn';
-@import './components/link';
-@import './components/titel';
 @import './components/modal';
 @import './components/gallery';
 @import './components/social-list';

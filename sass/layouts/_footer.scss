@@ -21,10 +21,8 @@
 }
 
 .address__link {
+  @include font(null, 14, 1.7143);
   display: block;
-  font-size: 14px;
-  line-height: 1.7143;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--timing);
 
@@ -47,11 +45,8 @@
 }
 
 .social__titel {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1429;
-  letter-spacing: 0.03em;
+  @include font(700, 14, 1.1429);
+  display: inline-block;
   text-transform: uppercase;
   color: var(--titel-white);
   margin-bottom: 20px;
@@ -90,12 +85,8 @@
 }
 
 .submit__title {
-  display: block;
+  @include font(700, 14, 1.1429);
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1429;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--titel-white);
 }
@@ -124,10 +115,7 @@
   }
 
   &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(400, 16, 1.25);
     color: rgba(255, 255, 255, 0.6);
   }
 
@@ -137,6 +125,7 @@
 }
 
 .submit__btn {
+  @extend %btn-primary;
   display: flex;
   min-width: 200px;
   transition: background-color var(--timing);

@@ -1,23 +1,19 @@
 .benefits__list {
 @extend %list;}
 
-.benefits__item__item {
+.benefits__item {
 max-width: 270px;
 }
 
 .benefits__titel {
-  font-size: 14px;
-  line-height: 1.1429;
-  letter-spacing: 0.03em;
+  @include font (null, 14, 1.1429);
   text-transform: uppercase;
   color: var(--first-gray);
   margin-bottom: 10px;
 }
 
 .benefits__text {
-  font-size: 14px;
-  line-height: 1.7143;
-  letter-spacing: 0.03em;
+  @include font (null, 14, 1.7143);
   color: var(--gray-light);
 }
 
@@ -30,7 +26,5 @@ max-width: 270px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-
-  
 }
 

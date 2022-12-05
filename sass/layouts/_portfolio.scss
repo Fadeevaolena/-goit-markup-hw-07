@@ -13,11 +13,8 @@ margin-bottom: 50px;
 }
 
 .menu__btn {
+  @include font(500, 16, 1.625);
   padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  letter-spacing: 0.03em;
   color: var(--first-gray);
   background: var(--background-light-gray);
   border-radius: 4px;
