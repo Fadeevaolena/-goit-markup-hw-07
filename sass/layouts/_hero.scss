@@ -9,22 +9,22 @@
     url(../images/hero_img.jpg);
   background-position: center;
   background-size: cover;
+}
 
-  &--container {
-    text-align: center;
-  }
+.hero--container {
+  text-align: center;
+}
 
-  &__titel {
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--titel-white);
-  }
+.hero__titel {
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--titel-white);
 }
 
 .hero__btn {
@@ -70,4 +70,3 @@
     transform: translateY(-50%);
   }
 }
-

@@ -1,5 +1,5 @@
 @import './utils/vars';
-@import 'utils/placeholders';
+@import './utils/placeholders';
 @import './utils/hidden.scss';
 @import './base/reset';
 @import './base/common';
@@ -11,8 +11,8 @@
 @import './components/link';
 @import './components/titel';
 @import './components/modal';
-@import './components/work-card';
-
+@import './components/gallery';
+@import './components/social-list';
 
 
 @import './layouts/header';
