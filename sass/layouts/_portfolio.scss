@@ -1,11 +1,9 @@
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %wlex-cent;
 }
 
-.gallery__menu{
-margin-bottom: 50px;
+.gallery__menu {
+  margin-bottom: 50px;
 }
 
 .menu__item:not(:last-child) {
@@ -21,15 +19,11 @@ margin-bottom: 50px;
   transition: transform var(--timing), color var(--timing), background-color var(--timing),
     box-shadow var(--timing);
 
-    &:hover,
-    &:focus {
-        color: var(--titel-white);
-        background-color: var(--effect-color);
-        box-shadow: var(--btn-portfolio-shadow);
-        transform: scale(1.1);
-      }
+  &:hover,
+  &:focus {
+    color: var(--titel-white);
+    background-color: var(--effect-color);
+    box-shadow: var(--btn-portfolio-shadow);
+    transform: scale(1.1);
+  }
 }
-
-
-
-
